@@ -24,8 +24,9 @@ scrollLinks.forEach(link => {
 
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
+    const navbarHeight = 62;
     //
-    let position = element.offsetTop - 62;
+    let position = element.offsetTop - navbarHeight;
 
     window.scrollTo({
       left: 0,
